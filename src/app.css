@@ -1,0 +1,52 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 16px;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+body {
+
+	/* Colors */
+	--orange: #FF7E1B;
+	--orange-hover: #FFAB6A;
+	--discount-badge-bg: #FFEEE2;
+	--text-dark: #1D2026;
+	--text-light: #69707D;
+	--text-extra-light: #B6BCC8;
+	--divider: #E4E9F2;
+	--qty-selector-bg: #F6F8FD;
+	--white: #FFFFFF;
+	--black: #000000;
+
+	min-height: 100dvh;
+	/* background-color: var(--white); */
+}
+
+#app {
+	max-width: 1150px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+	#app {
+		padding: 0;
+	}
+}
