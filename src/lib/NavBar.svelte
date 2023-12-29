@@ -88,7 +88,7 @@
 	}
 
 	.avatar:hover {
-		border: 2px solid var(--orange);
+		box-shadow: 0 0 0 2px var(--orange);
 	}
 
 	@media (max-width: 900px) {
