@@ -2,6 +2,16 @@
 	import NavBar from "./lib/NavBar.svelte";
 	import ImageCarousel from "./lib/ImageCarousel.svelte";
 	import QtySelector from "./lib/QtySelector.svelte";
+	import { cart } from "./stores";
+	
+	let qty = 0;
+	
+	const addToCart = () => {
+		if (qty === 0) return;
+		$cart.qty = qty;
+		$cart.total = qty * 125;
+	}
+
 </script>
 
 <NavBar />
@@ -20,8 +30,8 @@
 			<span class="previous-price">$250.00</span>
 		</div>
 		<div class="button-container">
-			<QtySelector />
-			<button class="add-to-cart-btn" type="button">
+			<QtySelector bind:qty={qty}/>
+			<button on:click={addToCart} class="add-to-cart-btn" type="button">
 				<img class="cart-icon" src="images/icon-cart.svg" alt="Cart icon">
 				Add to cart
 			</button>
