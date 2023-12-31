@@ -124,4 +124,9 @@
     label.selected .thumb-img {
         opacity: 0.5;
     }
+
+    @media (max-width: 915px) {
+		
+	}
+    
 </style>

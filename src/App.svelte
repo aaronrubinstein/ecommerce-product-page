@@ -141,8 +141,14 @@
 		height: 16px;
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 980px) {
+		main {
+			gap: 60px;
+		}
+	}
 
+	@media (max-width: 915px) {
+		
 	}
 
 </style>

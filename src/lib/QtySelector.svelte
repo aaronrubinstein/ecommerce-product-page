@@ -44,7 +44,6 @@
 
     .quantity {
         flex: 1 1;
-        /* flex-grow: 1; */
         font-size: 16px;
         font-weight: 700;
         color: var(--text-dark);
