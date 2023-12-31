@@ -148,7 +148,55 @@
 	}
 
 	@media (max-width: 915px) {
-		
+		main {
+			margin: 0;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 24px;
+		}
+
+		article {
+			padding: 0 24px;
+		}
+
+		.brand-name {
+			font-size: 12px;
+			letter-spacing: 1.846px;
+		}
+
+		h1 {
+			font-size: 28px;
+			line-height: 32px;
+			margin: 19px 0 15px 0;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 25px;
+		}
+
+		.price-container {
+			flex-direction: row;
+			align-items: center;
+			gap: 0;
+		}
+
+		.previous-price {
+			margin-left: auto;
+		}
+
+		.button-container {
+			margin-top: 26px;
+			flex-direction: column;
+		}
+
+		.add-to-cart-btn {
+			flex: auto;
+			height: 56px;
+			margin-bottom: 50px;
+		}
+
 	}
 
 </style>

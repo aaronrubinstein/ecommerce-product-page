@@ -141,8 +141,15 @@
         }
     }
 
-    @media (max-width: 980px) {
-        
+    @media (max-width: 915px) {
+        .card {
+            position: absolute;
+            top: 76px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: initial;
+            z-index: 1;   
+        }
     }
 
 </style>

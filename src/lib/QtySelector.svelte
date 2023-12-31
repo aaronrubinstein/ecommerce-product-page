@@ -57,6 +57,12 @@
 
     button:hover > svg {
         color: var(--orange-hover);
-    } 
+    }
+
+    @media (max-width: 915px) {
+        .container {
+            flex: auto;
+        }
+    }
 
 </style>
