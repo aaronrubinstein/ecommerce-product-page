@@ -5,6 +5,7 @@
 	import { cart } from "./stores";
 	
 	let qty = 0;
+	let lightbox = false;
 	
 	const addToCart = () => {
 		if (qty === 0) return;
@@ -14,10 +15,16 @@
 
 </script>
 
+{#if lightbox}
+<div class="lightbox-background">
+		<ImageCarousel {lightbox} on:lightbox-close={() => lightbox = false} />
+	</div>
+{/if}
+
 <NavBar />
 
 <main>
-	<ImageCarousel />
+	<ImageCarousel on:lightbox-open={() => lightbox = true} />
 	<article>
 		<div class="brand-name">Sneaker Company</div>
 		<h1>Fall Limited Edition Sneakers</h1>
@@ -40,6 +47,18 @@
 </main>
 
 <style>
+
+	.lightbox-background {
+		position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: hsla(0, 0%, 0%, 0.75);
+        z-index: 3;
+		display: grid;
+		place-items: center;
+	}
 
 	main {
 		margin: 90px 47px 0 48px;
